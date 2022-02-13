@@ -5,16 +5,16 @@
 
 % reading orignal image
 org = imread('a.png');
-imshow(org);
-pause(3);
+subplot(221);
+imshow(org);title('Org Image');
 
 % original to grayscale
 % gr1 = rgb2gray(org);
 % imshow(gr1);
 % pause(3);
 gr1 = (org(:,:,1)/3 + org(:,:,2)/3 + org(:,:,3)/3);
-imshow(gr1);
-pause(3);
+subplot(222);
+imshow(gr1);title('G1 Gray Image');
 
 % making center of image black
 
@@ -27,10 +27,10 @@ for i = int16(3*s(1)/10):int16(7*s(1)/10)
     end
 end
 
-imshow(gr2);
-pause(3);
+subplot(223);
+imshow(gr2);title('G2 Gray Image with black center');
 
 % gr1 - gr2
 gr3 = gr1 - gr2;
-imshow(gr3);
-pause(3);
+subplot(224);
+imshow(gr3);title('G1 - G2');
