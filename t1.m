@@ -6,16 +6,17 @@
 
 % reading orignal image
 org = imread('a.png');
-imshow(org);
-pause(3);
+subplot(231);
+imshow(org);title('Org Image');
+
 
 % original to grayscale
 % gr1 = rgb2gray(org);
 % imshow(gr1);
 % pause(3);
 gr2 = (org(:,:,1)/3 + org(:,:,2)/3 + org(:,:,3)/3);
-imshow(gr2);
-pause(3);
+subplot(232);
+imshow(gr2);title('Gray Image');
 
 % converting into binary image
 s = size(gr2);
@@ -31,8 +32,22 @@ for i = 1:s(1)
     end
 end
 
-imshow(b);
-pause(3);
+subplot(233);
+imshow(b);title('Binary Image');
+
+
+% RGB + binary
+
+rb1 = org + uint8(b);
+subplot(234);
+imshow(rb1);title('Org + Binary Image');
+
+% RGB + 20
+
+rb2 = org + uint8(20);
+subplot(235);
+imshow(rb2);title('Org + 20 Image');
+
 
 % RGB + binary
 
