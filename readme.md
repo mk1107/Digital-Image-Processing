@@ -23,3 +23,7 @@ Assignment4:
 ## t5 :-
   Assignment5:
 - Task-->Read a color image and perform bitplane slicing on it.
+
+## t6 :-
+  Assignment6:
+- Task-->Read a color image and perform Histogram equalisation on it.
