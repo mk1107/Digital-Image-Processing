@@ -1,4 +1,4 @@
-% Assignment6:
+% Assignment 7:
 % Task-->Read a color image and perform Contrast Manipulation on it.
 
 % reading orignal image
