@@ -12,8 +12,8 @@ for i = int16(3*s(1)/10):int16(7*s(1)/10)
     end
 end
 
-imshow(rec);
-pause(3);
+subplot(241);
+imshow(rec);title('Rec');
 
 % creating image with circle in center
 %define radius and center coordinates
@@ -23,35 +23,35 @@ r=250;x_c=0;y_c=0;
 
 cir = (x-x_c).^2+(y-y_c).^2 <= r^2;
 
-imshow(cir);
-pause(3);
+subplot(242);
+imshow(cir);title('Cir');
 
 % AND 
 and = rec & cir;
-imshow(and);
-pause(3);
+subplot(243);
+imshow(and);title('Rec AND Cir');
 
 % OR 
 or = rec | cir;
-imshow(or);
-pause(3);
+subplot(244);
+imshow(or);title('Rec OR Cir');
 
 % XOR 
 x_o_r =  xor(rec, cir);
-imshow(x_o_r);
-pause(3);
+subplot(245);
+imshow(x_o_r);title('Rec XOR Cir');
 
 % NAND 
 nand = ~(rec & cir);
-imshow(nand);
-pause(3);
+subplot(246);
+imshow(nand);title('Rec NAND Cir');
 
 % NOR 
 nor = ~(rec | cir);
-imshow(nor);
-pause(3);
+subplot(247);
+imshow(nor);title('Rec NOR Cir');
 
 % NXOR 
 nx_o_r =  ~xor(rec, cir);
-imshow(nx_o_r);
-pause(3);
+subplot(248);
+imshow(nx_o_r);title('Rec NXOR Cir');
