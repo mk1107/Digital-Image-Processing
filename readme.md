@@ -27,3 +27,7 @@ Assignment4:
 ## t6 :-
   Assignment6:
 - Task-->Read a color image and perform Histogram equalisation on it.
+
+## t7 :-
+Assignment 7:
+- Task-->Read a color image and perform Contrast Manipulation on it.
