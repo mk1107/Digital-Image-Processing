@@ -18,7 +18,7 @@ Assignment3:
 
 ## t4 :- 
 Assignment4:
-- Task---> Read a color image and display its reddish,greenisg and bluish image
+- Task--> Read a color image and display its reddish,greenisg and bluish image
 
 ## t5 :-
   Assignment5:
